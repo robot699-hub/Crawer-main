@@ -1,0 +1,177 @@
+{
+  "schema_version": 4,
+  "job": {
+    "source_url": "https://www.ifpri.org/project/nexus-project/",
+    "target_region": "全球；国家级 SAM 覆盖国按原始数据论文记录",
+    "material_or_data": "IFPRI Nexus 社会核算矩阵（SAM）项目：农业—食物系统政策模拟的模型数据、分类、构建方法、版本及数据论文",
+    "first_batch_scope": "仅收录 IFPRI Nexus Project 直接说明、IFPRI 数据集目录中明确标为 Nexus SAM 的项目材料，以及项目页面或其数据论文明确链接的公开国家 SAM 数据论文。保存项目与目录 HTML 正文；下载公开 PDF、数据表和附件。记录国家、SAM 基期、版本/发布日期、42/5/10 分类结构、农村/城市家庭分组、数据来源与更新线索。该来源不是农业法律或条例库：不得将模型数据、数据论文或研究结论标记为法规正文。",
+    "license_and_boundaries": "仅采集公开可访问的 IFPRI、CGIAR/CGSpace 和项目明确链接的数据文件与页面，遵守 robots.txt、文件许可和署名要求。已声明 CC BY 4.0 的记录单独保留其许可；其他项目页和文件的再利用条件逐条核验。归档用于研究、复现和政策模拟证据定位，不等同于法律文本或政策决定。",
+    "latest_items": 10,
+    "content_fields": [
+      "项目/数据论文名称",
+      "国家与 SAM 基期",
+      "SAM 分类与家庭分组",
+      "数据源、方法与平衡处理",
+      "版本、发布日期和更新线索",
+      "许可与原始链接"
+    ]
+  },
+  "run": {
+    "output_dir": "D:\\爬取数据\\D34\\完整归档",
+    "output_format": "xlsx",
+    "include_fao": false,
+    "exclude_domains": [],
+    "max_candidates": 10,
+    "max_pages": 12,
+    "max_pages_per_site": 12,
+    "max_depth": 1,
+    "min_link_score": 1,
+    "delay": 1.2,
+    "timeout": 60,
+    "max_file_mb": 150,
+    "respect_robots": true,
+    "verify_dns": true,
+    "user_agent": "OfficialSourceCrawler/1.0 (D34 IFPRI Nexus SAM archive)"
+  },
+  "candidate_defaults": {
+    "source_id": "D34",
+    "enabled": true,
+    "priority": "P1",
+    "usage_license": "公开访问；项目页、数据论文和数据文件的具体许可与署名要求以原始记录为准",
+    "crawl": {
+      "scope_ready": true,
+      "max_items": 2,
+      "max_pages": 1,
+      "max_depth": 0,
+      "min_link_score": 1,
+      "include_terms": [
+        "nexus",
+        "social accounting matrix",
+        "sam",
+        "cge",
+        "agriculture",
+        "agrifood",
+        "rural",
+        "household",
+        "policy analysis"
+      ],
+      "exclude_terms": [],
+      "region_terms": [],
+      "year_start": 2015,
+      "year_end": 2026,
+      "dataset_detail_url_patterns": [
+        "/project/nexus-project/",
+        "/publications/datasets/",
+        "/items/",
+        "/bitstreams/"
+      ],
+      "allowed_domains": [
+        "ifpri.org",
+        "www.ifpri.org",
+        "cgspace.cgiar.org",
+        "hdl.handle.net"
+      ],
+      "file_types": [
+        "pdf",
+        "doc",
+        "docx",
+        "xls",
+        "xlsx",
+        "csv",
+        "zip"
+      ],
+      "download": true,
+      "save_html": true
+    }
+  },
+  "candidates": [
+    {
+      "id": "D34-NEXUS-PROJECT",
+      "source_id": "D34-IFPRI",
+      "publisher": "International Food Policy Research Institute (IFPRI)",
+      "name": "IFPRI Nexus SAMs 项目说明、标准结构与更新原则",
+      "country_or_region": "全球",
+      "url": "https://www.ifpri.org/project/nexus-project/",
+      "crawl": {
+        "save_html": true,
+        "year_start": null,
+        "year_end": null
+      }
+    },
+    {
+      "id": "D34-IFPRI-DATASETS",
+      "source_id": "D34-IFPRI",
+      "publisher": "International Food Policy Research Institute (IFPRI)",
+      "name": "IFPRI 数据集目录中的 Nexus SAM 国家版本线索",
+      "country_or_region": "全球",
+      "url": "https://www.ifpri.org/publications/datasets/",
+      "crawl": {
+        "save_html": true
+      }
+    },
+    {
+      "id": "D34-MEXICO-2023-SAM",
+      "source_id": "D34-CGSPACE",
+      "publisher": "International Food Policy Research Institute (IFPRI)",
+      "name": "2023 Mexico Social Accounting Matrix: A Nexus Project SAM",
+      "country_or_region": "墨西哥",
+      "url": "https://cgspace.cgiar.org/server/api/core/bitstreams/6c1382b7-0734-4da8-bdb8-8e10941517ee/content"
+    },
+    {
+      "id": "D34-COMOROS-2023-SAM",
+      "source_id": "D34-CGSPACE",
+      "publisher": "International Food Policy Research Institute (IFPRI)",
+      "name": "2023 Comoros Social Accounting Matrix: A Nexus Project SAM",
+      "country_or_region": "科摩罗",
+      "url": "https://cgspace.cgiar.org/server/api/core/bitstreams/a8079636-a15c-48eb-8e03-ff413629e61d/content"
+    },
+    {
+      "id": "D34-BANGLADESH-2022-SAM",
+      "source_id": "D34-CGSPACE",
+      "publisher": "International Food Policy Research Institute (IFPRI)",
+      "name": "2022 Bangladesh Social Accounting Matrix: A Nexus Project SAM",
+      "country_or_region": "孟加拉国",
+      "url": "https://cgspace.cgiar.org/server/api/core/bitstreams/7f9e877a-fb45-4026-93e0-130246a5d74c/content"
+    },
+    {
+      "id": "D34-CAMBODIA-2022-SAM",
+      "source_id": "D34-CGSPACE",
+      "publisher": "International Food Policy Research Institute (IFPRI)",
+      "name": "2022 Cambodia Social Accounting Matrix: A Nexus Project SAM",
+      "country_or_region": "柬埔寨",
+      "url": "https://cgspace.cgiar.org/server/api/core/bitstreams/ffa6d651-571e-4264-8291-eb8b32605e6b/content"
+    },
+    {
+      "id": "D34-VIETNAM-2023-SAM",
+      "source_id": "D34-CGSPACE",
+      "publisher": "International Food Policy Research Institute (IFPRI)",
+      "name": "2023 Vietnam Social Accounting Matrix: A Nexus Project SAM",
+      "country_or_region": "越南",
+      "url": "https://cgspace.cgiar.org/server/api/core/bitstreams/b7467e4d-c2cb-4abb-9207-5b1a2aa8bc7e/content"
+    },
+    {
+      "id": "D34-NIGER-2018-SAM",
+      "source_id": "D34-CGSPACE",
+      "publisher": "International Food Policy Research Institute (IFPRI)",
+      "name": "2018 Niger Social Accounting Matrix: A Nexus Project SAM",
+      "country_or_region": "尼日尔",
+      "url": "https://cgspace.cgiar.org/server/api/core/bitstreams/e555a455-1ffb-4c5b-822d-a46e61b89692/content"
+    },
+    {
+      "id": "D34-TANZANIA-2015-SAM",
+      "source_id": "D34-CGSPACE",
+      "publisher": "International Food Policy Research Institute (IFPRI)",
+      "name": "2015 Tanzania Social Accounting Matrix: A Nexus Project SAM",
+      "country_or_region": "坦桑尼亚",
+      "url": "https://cgspace.cgiar.org/server/api/core/bitstreams/7646f14d-5e3c-4075-95a8-7521f0ba0dd5/content"
+    },
+    {
+      "id": "D34-MALAWI-2019-SAM",
+      "source_id": "D34-CGSPACE",
+      "publisher": "International Food Policy Research Institute (IFPRI)",
+      "name": "2019 Malawi Social Accounting Matrix: A Nexus Project SAM",
+      "country_or_region": "马拉维",
+      "url": "https://cgspace.cgiar.org/server/api/core/bitstreams/137351c0-9fad-4a40-8f01-7eaacfd26323/content"
+    }
+  ]
+}

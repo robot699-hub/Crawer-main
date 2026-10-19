@@ -1,0 +1,124 @@
+{
+  "schema_version": 4,
+  "job": {
+    "source_url": "https://www.fao.org/giews/countrybrief/",
+    "target_region": "GIEWS有覆盖的目标国",
+    "material_or_data": "GIEWS国别简报",
+    "first_batch_scope": "最近版与必要历史版，保存作物季、收成、价格、贸易、政策与发布日期",
+    "license_and_boundaries": "FAO GIEWS Country Briefs；CC BY 4.0",
+    "latest_items": 10,
+    "content_fields": [
+      "作物季",
+      "收成",
+      "价格",
+      "贸易",
+      "政策",
+      "发布日期"
+    ]
+  },
+  "run": {
+    "output_dir": "~/Desktop/GIEWS国别简报_最新10条",
+    "output_format": "xlsx",
+    "include_fao": true,
+    "max_candidates": 10,
+    "max_pages": 10,
+    "max_pages_per_site": 10,
+    "max_depth": 0,
+    "min_link_score": 0,
+    "delay": 1.0,
+    "timeout": 45.0,
+    "max_file_mb": 200,
+    "respect_robots": true,
+    "verify_dns": true,
+    "user_agent": "OfficialSourceCrawler/1.0"
+  },
+  "candidate_defaults": {
+    "source_id": "GIEWS",
+    "enabled": true,
+    "priority": "P0",
+    "publisher": "FAO Global Information and Early Warning System (GIEWS)",
+    "usage_license": "CC BY 4.0",
+    "crawl": {
+      "scope_ready": true,
+      "max_items": 1,
+      "max_pages": 1,
+      "max_depth": 0,
+      "file_types": [
+        "pdf"
+      ],
+      "download": true
+    }
+  },
+  "candidates": [
+    {
+      "id": "GIEWS-HND-2026-10-07",
+      "name": "GIEWS Country Brief - Honduras - 2026-10-07",
+      "country_or_region": "Honduras",
+      "publication_date": "2026-10-07",
+      "url": "https://www.fao.org/giews/countrybrief/country/HND/pdf/HND.pdf"
+    },
+    {
+      "id": "GIEWS-ERI-2026-09-30",
+      "name": "GIEWS Country Brief - Eritrea - 2026-09-30",
+      "country_or_region": "Eritrea",
+      "publication_date": "2026-09-30",
+      "url": "https://www.fao.org/giews/countrybrief/country/ERI/pdf/ERI.pdf"
+    },
+    {
+      "id": "GIEWS-HTI-2026-09-29",
+      "name": "GIEWS Country Brief - Haiti - 2026-09-29",
+      "country_or_region": "Haiti",
+      "publication_date": "2026-09-29",
+      "url": "https://www.fao.org/giews/countrybrief/country/HTI/pdf/HTI.pdf"
+    },
+    {
+      "id": "GIEWS-PRY-2026-09-25",
+      "name": "GIEWS Country Brief - Paraguay - 2026-09-25",
+      "country_or_region": "Paraguay",
+      "publication_date": "2026-09-25",
+      "url": "https://www.fao.org/giews/countrybrief/country/PRY/pdf/PRY.pdf"
+    },
+    {
+      "id": "GIEWS-SDN-2026-09-24",
+      "name": "GIEWS Country Brief - Sudan - 2026-09-24",
+      "country_or_region": "Sudan",
+      "publication_date": "2026-09-24",
+      "url": "https://www.fao.org/giews/countrybrief/country/SDN/pdf/SDN.pdf"
+    },
+    {
+      "id": "GIEWS-MDG-2026-09-23",
+      "name": "GIEWS Country Brief - Madagascar - 2026-09-23",
+      "country_or_region": "Madagascar",
+      "publication_date": "2026-09-23",
+      "url": "https://www.fao.org/giews/countrybrief/country/MDG/pdf/MDG.pdf"
+    },
+    {
+      "id": "GIEWS-GMB-2026-09-22",
+      "name": "GIEWS Country Brief - Gambia - 2026-09-22",
+      "country_or_region": "Gambia",
+      "publication_date": "2026-09-22",
+      "url": "https://www.fao.org/giews/countrybrief/country/GMB/pdf/GMB.pdf"
+    },
+    {
+      "id": "GIEWS-PAN-2026-09-18",
+      "name": "GIEWS Country Brief - Panama - 2026-09-18",
+      "country_or_region": "Panama",
+      "publication_date": "2026-09-18",
+      "url": "https://www.fao.org/giews/countrybrief/country/PAN/pdf/PAN.pdf"
+    },
+    {
+      "id": "GIEWS-MMR-2026-09-18",
+      "name": "GIEWS Country Brief - Myanmar - 2026-09-18",
+      "country_or_region": "Myanmar",
+      "publication_date": "2026-09-18",
+      "url": "https://www.fao.org/giews/countrybrief/country/MMR/pdf/MMR.pdf"
+    },
+    {
+      "id": "GIEWS-MNG-2026-09-18",
+      "name": "GIEWS Country Brief - Mongolia - 2026-09-18",
+      "country_or_region": "Mongolia",
+      "publication_date": "2026-09-18",
+      "url": "https://www.fao.org/giews/countrybrief/country/MNG/pdf/MNG.pdf"
+    }
+  ]
+}

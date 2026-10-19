@@ -1,0 +1,73 @@
+{
+  "schema_version": 4,
+  "job": {
+    "source_url": "https://example.org/data/",
+    "target_region": "填写目标国家或地区",
+    "material_or_data": "填写材料或数据名称",
+    "first_batch_scope": "填写首批范围",
+    "license_and_boundaries": "填写许可、访问条件和使用边界",
+    "latest_items": 10,
+    "content_fields": [
+      "名称",
+      "发布机构",
+      "国家或地区",
+      "发布日期",
+      "覆盖年份"
+    ]
+  },
+  "run": {
+    "output_dir": "~/Desktop/爬虫输出",
+    "output_format": "xlsx",
+    "include_fao": false,
+    "exclude_domains": [],
+    "max_candidates": 10,
+    "max_pages": null,
+    "max_pages_per_site": null,
+    "max_depth": 3,
+    "min_link_score": 2,
+    "delay": 1.0,
+    "timeout": 30.0,
+    "max_file_mb": 200,
+    "respect_robots": true,
+    "verify_dns": true,
+    "user_agent": "OfficialSourceCrawler/1.0"
+  },
+  "candidate_defaults": {
+    "source_id": "SOURCE-001",
+    "enabled": true,
+    "priority": "P0",
+    "publisher": "填写发布机构",
+    "usage_license": "未识别，需人工核验",
+    "crawl": {
+      "scope_ready": false,
+      "max_items": 10000,
+      "max_pages": 50000,
+      "max_depth": 3,
+      "min_link_score": 2,
+      "include_terms": [],
+      "exclude_terms": [],
+      "region_terms": [],
+      "year_start": null,
+      "year_end": null,
+      "dataset_detail_url_patterns": [],
+      "allowed_domains": [],
+      "file_types": [
+        "pdf",
+        "doc",
+        "docx",
+        "txt",
+        "md"
+      ],
+      "download": true
+    }
+  },
+  "candidates": [
+    {
+      "id": "SOURCE-001-01",
+      "name": "填写本条记录名称",
+      "country_or_region": "填写本条记录国家或地区",
+      "publication_date": "",
+      "url": "https://example.org/data/item-or-file"
+    }
+  ]
+}

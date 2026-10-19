@@ -1,0 +1,88 @@
+{
+  "schema_version": 4,
+  "job": {
+    "source_url": "https://pakistancode.gov.pk/english/index.html",
+    "target_region": "巴基斯坦；缅甸",
+    "material_or_data": "巴基斯坦和缅甸官方法律、条例与政策正文",
+    "first_batch_scope": "从两国指定的官方法律信息库中，采集可公开访问的法律、条例、规则、命令及其正文；PDF、Word、文本文件直接下载，范围内 HTML 页面另存为本地正文。",
+    "license_and_boundaries": "仅采集官方站点公开提供的内容并保留原始链接、下载日期、文件摘要和站点提示。法规效力、最新修订与适用范围须以官方公报或页面标注为准。",
+    "content_fields": [
+      "名称",
+      "发布机构",
+      "国家或地区",
+      "发布日期",
+      "覆盖年份"
+    ]
+  },
+  "run": {
+    "output_dir": "D:\\爬取数据\\D08\\政策正文",
+    "output_format": "xlsx",
+    "include_fao": false,
+    "exclude_domains": [],
+    "max_candidates": 2,
+    "max_pages": 100000,
+    "max_pages_per_site": 50000,
+    "max_depth": 6,
+    "min_link_score": 0,
+    "delay": 1.0,
+    "timeout": 60.0,
+    "max_file_mb": 200,
+    "respect_robots": true,
+    "verify_dns": true,
+    "user_agent": "OfficialSourceCrawler/1.0 (+contact: replace-with-your-email@example.com)"
+  },
+  "candidate_defaults": {
+    "source_id": "D08",
+    "enabled": true,
+    "priority": "P0",
+    "usage_license": "以法规页面、官方公报及站点使用条款为准；需人工核验再利用条件",
+    "crawl": {
+      "discovery_mode": "web",
+      "scope_ready": true,
+      "max_items": null,
+      "max_pages": 50000,
+      "max_depth": 6,
+      "min_link_score": 0,
+      "include_terms": [],
+      "exclude_terms": [],
+      "region_terms": [],
+      "year_start": null,
+      "year_end": null,
+      "dataset_detail_url_patterns": [
+        ".php",
+        "/law/",
+        "/laws/",
+        "/legislation/"
+      ],
+      "allowed_domains": [],
+      "file_types": [
+        "pdf",
+        "doc",
+        "docx",
+        "txt"
+      ],
+      "download": true,
+      "save_html": true
+    }
+  },
+  "candidates": [
+    {
+      "id": "D08-PK",
+      "name": "巴基斯坦 Pakistan Code 联邦法律与附属立法",
+      "country_or_region": "巴基斯坦",
+      "publisher": "Ministry of Law and Justice, Pakistan / Laws of Pakistan Cell",
+      "url": "https://pakistancode.gov.pk/english/index.html",
+      "first_batch_scope": "巴基斯坦 Pakistan Code 公开收录的联邦一级立法、二级/附属立法、条例、规则及其可下载或可访问的正文。",
+      "license_and_boundaries": "Pakistan Code 为司法部管理的官方双语法律版本；站点说明内容供参考，如有疑义应以相关官方 Gazette 为准。保留原始链接、修订线索和下载日期。"
+    },
+    {
+      "id": "D08-MM",
+      "name": "缅甸 Myanmar Law Information System 法律与政策",
+      "country_or_region": "缅甸",
+      "publisher": "Myanmar Law Information System",
+      "url": "https://www.mlis.gov.mm/",
+      "first_batch_scope": "缅甸 Myanmar Law Information System 公开提供的法律、条例、规则、命令及其可下载或可访问的正文。",
+      "license_and_boundaries": "仅记录并下载站点公开提供的内容；如遇访问超时、登录限制或无公开全文，保留失败原因而不绕过限制。法规效力和文本完整性须逐条核验。"
+    }
+  ]
+}

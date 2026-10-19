@@ -1,0 +1,164 @@
+{
+  "schema_version": 4,
+  "job": {
+    "source_url": "https://comtradeplus.un.org/TradeFlow",
+    "target_region": "巴基斯坦、缅甸；伙伴国/地区按官方 API 返回的全部双边伙伴",
+    "material_or_data": "UN Comtrade 农产品双边贸易数据、HS 口径与方法学证据",
+    "first_batch_scope": "首批沿用已指定的巴基斯坦、缅甸两个报告国；不限定 partnerCode，以保留官方 API 返回的全部双边伙伴国/地区。按 HS 原始分类收录小麦(1001)、玉米(1005)、稻米(1006)的进出口记录。年度先收 2023、2024；并保留年度数据可得性记录。该来源不是农业法规库，贸易记录及方法学材料不得标注为政策条例正文。",
+    "license_and_boundaries": "仅调用 UN Comtrade 官方公开 Preview API 和公开方法学文件；Preview 每次查询最多 500 条，可能不是完整结果。大批量、可下载完整数据需由持有者使用其 UN Comtrade 账户/API subscription key 重新提取。遵守 UN Comtrade License Agreement；不得把本次提取视作再分发或商业使用授权。",
+    "latest_items": 15,
+    "content_fields": [
+      "报告国",
+      "伙伴国/地区",
+      "贸易流向",
+      "HS 原始分类",
+      "商品编码",
+      "商品名称",
+      "年度/月度",
+      "初级贸易金额",
+      "净重",
+      "数量",
+      "数据可得性与发布时间"
+    ]
+  },
+  "run": {
+    "output_dir": "D:\\爬取数据\\D12\\正式采集",
+    "output_format": "xlsx",
+    "include_fao": false,
+    "exclude_domains": [],
+    "max_candidates": 15,
+    "max_pages": 15,
+    "max_pages_per_site": 15,
+    "max_depth": 0,
+    "min_link_score": 0,
+    "delay": 1.2,
+    "timeout": 60,
+    "max_file_mb": 100,
+    "respect_robots": true,
+    "verify_dns": true,
+    "user_agent": "OfficialSourceCrawler/1.0 (UN Comtrade official API; D12 research extraction)"
+  },
+  "candidate_defaults": {
+    "source_id": "D12",
+    "enabled": true,
+    "priority": "P0",
+    "publisher": "United Nations Statistics Division (UNSD)",
+    "usage_license": "UN Comtrade License Agreement；公开 Preview API 的有限预览，不构成再分发许可",
+    "crawl": {
+      "scope_ready": true,
+      "max_items": 1,
+      "max_pages": 1,
+      "max_depth": 0,
+      "min_link_score": 0,
+      "include_terms": [],
+      "exclude_terms": [],
+      "region_terms": [],
+      "year_start": null,
+      "year_end": null,
+      "dataset_detail_url_patterns": [],
+      "allowed_domains": [
+        "comtradeapi.un.org",
+        "comtradeplus.un.org",
+        "uncomtrade.org"
+      ],
+      "file_types": [
+        "json",
+        "pdf"
+      ],
+      "download": true,
+      "save_html": false
+    }
+  },
+  "candidates": [
+    {
+      "id": "D12-PK-1001-2023",
+      "name": "巴基斯坦—全部伙伴国：小麦（HS 1001）双边进出口，2023 年",
+      "country_or_region": "巴基斯坦；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1001&period=2023&reporterCode=586&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-PK-1005-2023",
+      "name": "巴基斯坦—全部伙伴国：玉米（HS 1005）双边进出口，2023 年",
+      "country_or_region": "巴基斯坦；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1005&period=2023&reporterCode=586&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-PK-1006-2023",
+      "name": "巴基斯坦—全部伙伴国：稻米（HS 1006）双边进出口，2023 年",
+      "country_or_region": "巴基斯坦；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1006&period=2023&reporterCode=586&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-PK-1001-2024",
+      "name": "巴基斯坦—全部伙伴国：小麦（HS 1001）双边进出口，2024 年",
+      "country_or_region": "巴基斯坦；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1001&period=2024&reporterCode=586&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-PK-1005-2024",
+      "name": "巴基斯坦—全部伙伴国：玉米（HS 1005）双边进出口，2024 年",
+      "country_or_region": "巴基斯坦；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1005&period=2024&reporterCode=586&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-PK-1006-2024",
+      "name": "巴基斯坦—全部伙伴国：稻米（HS 1006）双边进出口，2024 年",
+      "country_or_region": "巴基斯坦；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1006&period=2024&reporterCode=586&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-MM-1001-2023",
+      "name": "缅甸—全部伙伴国：小麦（HS 1001）双边进出口，2023 年",
+      "country_or_region": "缅甸；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1001&period=2023&reporterCode=104&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-MM-1005-2023",
+      "name": "缅甸—全部伙伴国：玉米（HS 1005）双边进出口，2023 年",
+      "country_or_region": "缅甸；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1005&period=2023&reporterCode=104&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-MM-1006-2023",
+      "name": "缅甸—全部伙伴国：稻米（HS 1006）双边进出口，2023 年",
+      "country_or_region": "缅甸；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1006&period=2023&reporterCode=104&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-MM-1001-2024",
+      "name": "缅甸—全部伙伴国：小麦（HS 1001）双边进出口，2024 年",
+      "country_or_region": "缅甸；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1001&period=2024&reporterCode=104&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-MM-1005-2024",
+      "name": "缅甸—全部伙伴国：玉米（HS 1005）双边进出口，2024 年",
+      "country_or_region": "缅甸；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1005&period=2024&reporterCode=104&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-MM-1006-2024",
+      "name": "缅甸—全部伙伴国：稻米（HS 1006）双边进出口，2024 年",
+      "country_or_region": "缅甸；全部伙伴国/地区",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=1006&period=2024&reporterCode=104&flowCode=X%2CM&maxrecords=500"
+    },
+    {
+      "id": "D12-PK-AVAILABILITY",
+      "name": "巴基斯坦：HS 年度贸易数据可得性与发布时间，2023—2024",
+      "country_or_region": "巴基斯坦",
+      "url": "https://comtradeapi.un.org/public/v1/getDA/C/A/HS?period=2023%2C2024&reporterCode=586"
+    },
+    {
+      "id": "D12-MM-AVAILABILITY",
+      "name": "缅甸：HS 年度贸易数据可得性与发布时间，2023—2024",
+      "country_or_region": "缅甸",
+      "url": "https://comtradeapi.un.org/public/v1/getDA/C/A/HS?period=2023%2C2024&reporterCode=104"
+    },
+    {
+      "id": "D12-METHODOLOGY",
+      "name": "UN Comtrade Plus 方法学指南",
+      "country_or_region": "全球；适用于巴基斯坦、缅甸数据解释",
+      "url": "https://comtradeapi.un.org/files/v1/app/wiki/MethodologyGuideforComtradePlus.pdf"
+    }
+  ]
+}

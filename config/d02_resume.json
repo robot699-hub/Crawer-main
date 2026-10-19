@@ -1,0 +1,57 @@
+{
+  "schema_version": 4,
+  "job": {
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2021/2115/2026-08-18/eng",
+    "target_region": "欧盟",
+    "material_or_data": "EUR-Lex CAP 与农业政策法规库（续跑新增批次）",
+    "first_batch_scope": "续接既有 EUR-Lex 农业与共同农业政策英文 PDF 批次；以 Cellar 公开接口发现，跳过 D02 旧目录中已下载的相同数据流。",
+    "license_and_boundaries": "仅采集 Publications Office / EUR-Lex 公开提供的文件；保留原始地址、CELEX 标识、下载日期和文件摘要，法规效力与适用范围仍须逐份核验。"
+  },
+  "run": {
+    "output_dir": "D:\\农策数据原文\\D02\\新增",
+    "resume_download_dir": "D:\\农策数据原文\\D02\\PDF",
+    "output_format": "xlsx",
+    "include_fao": false,
+    "exclude_domains": [],
+    "max_candidates": 1,
+    "max_pages": 10000,
+    "max_pages_per_site": 10000,
+    "max_depth": 0,
+    "min_link_score": 2,
+    "delay": 1.0,
+    "timeout": 60.0,
+    "max_file_mb": 200,
+    "respect_robots": true,
+    "verify_dns": true,
+    "user_agent": "OfficialSourceCrawler/1.0 (+contact: replace-with-your-email@example.com)"
+  },
+  "candidate_defaults": {
+    "source_id": "D02",
+    "enabled": true,
+    "priority": "P0",
+    "publisher": "Publications Office of the European Union / EUR-Lex",
+    "usage_license": "未识别，需人工核验",
+    "crawl": {
+      "discovery_mode": "eurlex_cellar",
+      "scope_ready": true,
+      "max_items": 2125,
+      "max_pages": 10000,
+      "max_depth": 0,
+      "min_link_score": 2,
+      "include_terms": [],
+      "eurlex_topics": ["common agricultural policy", "agricultur"],
+      "exclude_terms": [],
+      "region_terms": [],
+      "year_start": null,
+      "year_end": null,
+      "dataset_detail_url_patterns": [],
+      "allowed_domains": ["publications.europa.eu"],
+      "file_types": ["pdf"],
+      "download": true,
+      "eurlex_language": "ENG",
+      "eurlex_page_size": 100,
+      "eurlex_result_limit": 10000
+    }
+  },
+  "candidates": []
+}

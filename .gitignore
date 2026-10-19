@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.tmp/
+.test-tmp/
+.codex-test-tmp/
+.pytest_cache/
+crawler_output/
+test_output/
+data/
+html_probe/
+html_probe2/

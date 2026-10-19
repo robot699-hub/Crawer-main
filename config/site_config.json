@@ -1,0 +1,116 @@
+{
+  "schema_version": 4,
+  "job": {
+    "source_url": "https://data.worldbank.org/topic/agriculture-and-rural-development",
+    "target_region": "全球",
+    "material_or_data": "世界银行 WDI：农业与农村发展指标、元数据、版本资料与相关政策材料",
+    "first_batch_scope": "从两个指定世界银行 WDI 入口及其可发现的世界银行官方链接中，采集所有农业、农村发展、农村收入/贫困、农业就业、农业增加值等相关指标、元数据、数据字典、政策说明、报告和公开 PDF。农村收入与农村贫困仅按实际可得口径收录，不保证跨国连续或可比。",
+    "license_and_boundaries": "除指标或数据集元数据另有说明外，世界银行数据按 CC BY 4.0 使用并须按元数据署名；第三方提供的数据可能禁止再分发、复用或附加条件，必须逐条核验。按数据库发布与修订版本使用，保留原始链接、下载日期和文件摘要。",
+    "content_fields": [
+      "名称",
+      "发布机构",
+      "国家或地区",
+      "发布日期",
+      "覆盖年份"
+    ]
+  },
+  "run": {
+    "output_dir": "D:\\爬取数据\\D08",
+    "output_format": "xlsx",
+    "include_fao": false,
+    "exclude_domains": [],
+    "max_candidates": 2,
+    "max_pages": null,
+    "max_pages_per_site": null,
+    "max_depth": 2,
+    "min_link_score": 2,
+    "delay": 1.0,
+    "timeout": 60.0,
+    "max_file_mb": 200,
+    "respect_robots": true,
+    "verify_dns": true,
+    "user_agent": "OfficialSourceCrawler/1.0 (+contact: replace-with-your-email@example.com)"
+  },
+  "candidate_defaults": {
+    "source_id": "D08",
+    "enabled": true,
+    "priority": "P0",
+    "publisher": "World Bank",
+    "usage_license": "CC BY 4.0（以每项数据或指标元数据为准；第三方数据可能存在例外或附加条件）",
+    "crawl": {
+      "discovery_mode": "web",
+      "scope_ready": true,
+      "max_items": 10000,
+      "max_pages": 50000,
+      "max_depth": 3,
+      "min_link_score": 2,
+      "include_terms": [
+        "agriculture",
+        "agricultural",
+        "rural",
+        "employment in agriculture",
+        "rural population",
+        "rural poverty",
+        "rural income",
+        "agriculture, forestry, and fishing",
+        "World Development Indicators",
+        "WDI",
+        "metadata",
+        "data dictionary",
+        "policy",
+        "policy note",
+        "policy research"
+      ],
+      "exclude_terms": [],
+      "region_terms": [],
+      "year_start": null,
+      "year_end": null,
+      "dataset_detail_url_patterns": [
+        "/indicator/",
+        "/topic/",
+        "/source/",
+        "reports.aspx"
+      ],
+      "allowed_domains": [
+        "data.worldbank.org",
+        "databank.worldbank.org",
+        "api.worldbank.org",
+        "datatopics.worldbank.org",
+        "www.worldbank.org",
+        "openknowledge.worldbank.org",
+        "documents1.worldbank.org",
+        "thedocs.worldbank.org"
+      ],
+      "file_types": [
+        "pdf"
+      ],
+      "download": true
+    }
+  },
+  "candidates": [
+    {
+      "id": "D08-01",
+      "name": "世界银行 WDI 农业与农村发展专题",
+      "country_or_region": "全球",
+      "url": "https://data.worldbank.org/topic/agriculture-and-rural-development"
+    },
+    {
+      "id": "D08-02",
+      "name": "世界银行 World Development Indicators 数据库",
+      "country_or_region": "全球",
+      "url": "https://databank.worldbank.org/source/world-development-indicators",
+      "crawl": {
+        "include_terms": [
+          "World Development Indicators",
+          "WDI",
+          "agriculture",
+          "agricultural",
+          "rural",
+          "poverty",
+          "income",
+          "policy"
+        ]
+      }
+    }
+  ]
+}

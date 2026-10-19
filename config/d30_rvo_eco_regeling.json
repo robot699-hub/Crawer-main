@@ -1,0 +1,238 @@
+{
+  "schema_version": 4,
+  "job": {
+    "source_url": "https://www.rvo.nl/subsidies-financiering/glb-2026/eco-regeling",
+    "target_region": "荷兰",
+    "material_or_data": "荷兰 RVO 共同农业政策（GLB）2026 年 Eco-regeling 生态计划：公告、条件、生态活动规则、积分与价值、检查及公开附件",
+    "first_batch_scope": "仅收录 RVO.nl 上直接关联 GLB 2026 Eco-regeling 的当前政策页面、实施条件、生态活动规则、积分/价值表、公开附件和页面内明确披露的变更、过渡与失效信息；保存范围内 HTML 正文快照，下载公开 PDF、Excel、Word、CSV 附件。历史版本仅在 RVO 公开可访问且可与 2026 生态计划直接对应时收录；不将站内导航或无直接关联的农业资讯作为政策文本。",
+    "license_and_boundaries": "仅采集 RVO.nl 公开可访问内容，遵守 robots.txt 与网站使用条款。网页与附件的著作权、许可、版本和再利用限制逐条记录，未明确开放许可时标为需人工核验。快照用于研究归档与原文定位，不替代荷兰官方公告、法律文本或个案行政决定。",
+    "latest_items": 5,
+    "content_fields": [
+      "政策/规则名称",
+      "当前状态与核验日期",
+      "适用年度与申请期",
+      "资格条件和生态活动要求",
+      "积分、价值和补贴等级",
+      "变更、替代或失效线索",
+      "公开原文或附件链接"
+    ]
+  },
+  "run": {
+    "output_dir": "D:\\爬取数据\\D30\\完整归档",
+    "output_format": "xlsx",
+    "include_fao": false,
+    "exclude_domains": [],
+    "max_candidates": 19,
+    "max_pages": 19,
+    "max_pages_per_site": 19,
+    "max_depth": 0,
+    "min_link_score": 1,
+    "delay": 1.2,
+    "timeout": 60,
+    "max_file_mb": 100,
+    "respect_robots": true,
+    "verify_dns": true,
+    "user_agent": "OfficialSourceCrawler/1.0 (D30 RVO GLB Eco-regeling archive)"
+  },
+  "candidate_defaults": {
+    "source_id": "D30",
+    "enabled": true,
+    "priority": "P0",
+    "usage_license": "RVO.nl 页面/附件公开访问；具体著作权、许可与再利用条件需按原页面或文件核验",
+    "crawl": {
+      "scope_ready": true,
+      "max_items": 1,
+      "max_pages": 1,
+      "max_depth": 0,
+      "min_link_score": 1,
+      "include_terms": [
+        "eco-regeling",
+        "eco-activiteiten",
+        "glb",
+        "conditionaliteiten",
+        "actieve landbouwer",
+        "glb-controle",
+        "punten",
+        "waarde",
+        "subsidie",
+        "landbouw"
+      ],
+      "exclude_terms": [],
+      "region_terms": [],
+      "year_start": 2025,
+      "year_end": 2027,
+      "dataset_detail_url_patterns": [
+        "/glb-2026/",
+        "/eco-regeling/"
+      ],
+      "allowed_domains": [
+        "rvo.nl",
+        "www.rvo.nl"
+      ],
+      "file_types": [
+        "pdf",
+        "doc",
+        "docx",
+        "xls",
+        "xlsx",
+        "csv"
+      ],
+      "download": true,
+      "save_html": true
+    }
+  },
+  "candidates": [
+    {
+      "id": "D30-ECO-REGELING-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 Eco-regeling：生态计划主规则、申请、补贴与履约要求",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/subsidies-financiering/glb-2026/eco-regeling"
+    },
+    {
+      "id": "D30-ECO-ACTIVITEITEN-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 生态活动：活动条件、积分、价值与干旱调整",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/subsidies-financiering/glb-2026/eco-regeling/eco-activiteiten-punten-en-waarde"
+    },
+    {
+      "id": "D30-CONDITIONALITEITEN-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 条件性要求：生态计划适用的基础合规条件",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/glb-2026/conditionaliteiten"
+    },
+    {
+      "id": "D30-ACTIEVE-LANDBOUWER-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 活跃农民资格要求",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/glb-2026/actieve-landbouwer"
+    },
+    {
+      "id": "D30-GLB-CONTROLE-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 补贴检查、监测与更正流程",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/glb-2026/glb-controle"
+    },
+    {
+      "id": "D30-ECO-PUNTEN-WAARDE-PDF-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 生态活动积分与价值表（PDF）",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/sites/default/files/2025-11/251106%20Punten%20en%20waarde%20eco-activiteiten%202026.pdf"
+    },
+    {
+      "id": "D30-ECO-STAPELEN-XLSX-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 生态活动叠加规则表（Excel）",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/sites/default/files/2025-11/Overzicht%20stapelen%20eco-activiteiten%202026.xlsx"
+    },
+    {
+      "id": "D30-ECO-ANLB-OVERLAP-XLSX-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 生态计划与 ANLb 重叠规则表（Excel）",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/sites/default/files/2025-11/Tabel%20Overlap%20Eco-regeling%20en%20Agrarisch%20Natuur-%20en%20Landschapsbeheer%20%28ANLb%29%202026.xlsx"
+    },
+    {
+      "id": "D30-ECO-GEWASCODES-PDF-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 生态活动作物代码与作物清单（PDF）",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/sites/default/files/2026-03/Gewascodes%20en%20gewassen%20eco-activiteiten%202026.pdf"
+    },
+    {
+      "id": "D30-OVERMACHT-GLB-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 不可抗力申报与生态活动干旱调整",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/subsidies-financiering/overmacht-glb-subsidies"
+    },
+    {
+      "id": "D30-GRASLAND-KRUIDEN-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 生态活动：草地药草要求",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/glb-2026/eco-regeling/grasland-met-kruiden"
+    },
+    {
+      "id": "D30-PRECISIEBEMESTING-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 生态活动：精准施肥与精准植保条件",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/glb-2026/eco-regeling/eco-activiteiten-punten-en-waarde/precisiegewasbemesting"
+    },
+    {
+      "id": "D30-SANCTIES-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 拒绝、扣减与制裁规则",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/glb-2026/glb-controle/glb-subsidies-afwijzingen-kortingen-en-sancties"
+    },
+    {
+      "id": "D30-GLMC7-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 GLMC 7：耕地作物轮作要求",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/glb-2026/gewassen-op-bouwland-roteren-glmc-7"
+    },
+    {
+      "id": "D30-GRONDGEBRUIK-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 土地利用与合格地块规则",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/glb-2026/grondgebruik-en-glb"
+    },
+    {
+      "id": "D30-LANDSCHAPSELEMENTEN-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 景观要素与生态计划规则",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/glb-2026/landschapselementen"
+    },
+    {
+      "id": "D30-HENNEP-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 2026 工业大麻作物条件",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/glb-2026/hennep"
+    },
+    {
+      "id": "D30-RUSTGEWASSEN-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 生态活动关联：休耕作物种植规则",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/mest/rustgewassen"
+    },
+    {
+      "id": "D30-VANGGEWAS-2026",
+      "source_id": "D30-RVO",
+      "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+      "name": "荷兰 GLB 生态活动关联：覆盖作物规则",
+      "country_or_region": "荷兰",
+      "url": "https://www.rvo.nl/onderwerpen/mest/vanggewas"
+    }
+  ]
+}

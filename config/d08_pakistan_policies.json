@@ -1,0 +1,61 @@
+{
+  "schema_version": 4,
+  "job": {
+    "source_url": "https://www.pakistancode.gov.pk/english/index.html",
+    "target_region": "巴基斯坦",
+    "material_or_data": "巴基斯坦官方法律、条例与政策正文",
+    "first_batch_scope": "巴基斯坦 Pakistan Code 公开收录的联邦一级立法、二级/附属立法、条例、规则及其可下载或可访问的正文。",
+    "license_and_boundaries": "Pakistan Code 为司法部管理的官方双语法律版本；站点说明内容供参考，如有疑义应以相关官方 Gazette 为准。保留原始链接、修订线索和下载日期。",
+    "content_fields": ["名称", "发布机构", "国家或地区", "发布日期", "覆盖年份"]
+  },
+  "run": {
+    "output_dir": "D:\\爬取数据\\D08\\政策正文\\巴基斯坦",
+    "output_format": "xlsx",
+    "include_fao": false,
+    "exclude_domains": [],
+    "max_candidates": 1,
+    "max_pages": 50000,
+    "max_pages_per_site": 50000,
+    "max_depth": 6,
+    "min_link_score": 0,
+    "delay": 1.0,
+    "timeout": 60.0,
+    "max_file_mb": 200,
+    "respect_robots": false,
+    "verify_dns": true,
+    "user_agent": "OfficialSourceCrawler/1.0 (+contact: replace-with-your-email@example.com)"
+  },
+  "candidate_defaults": {
+    "source_id": "D08-PK",
+    "enabled": true,
+    "priority": "P0",
+    "publisher": "Ministry of Law and Justice, Pakistan / Laws of Pakistan Cell",
+    "usage_license": "以法规页面、官方公报及站点使用条款为准；需人工核验再利用条件",
+    "crawl": {
+      "discovery_mode": "web",
+      "scope_ready": true,
+      "max_items": null,
+      "max_pages": 50000,
+      "max_depth": 6,
+      "min_link_score": 0,
+      "include_terms": [],
+      "exclude_terms": [],
+      "region_terms": [],
+      "year_start": null,
+      "year_end": null,
+      "dataset_detail_url_patterns": [".php"],
+      "allowed_domains": [],
+      "file_types": ["pdf", "doc", "docx", "txt"],
+      "download": true,
+      "save_html": true
+    }
+  },
+  "candidates": [
+    {
+      "id": "D08-PK",
+      "name": "巴基斯坦 Pakistan Code 联邦法律与附属立法",
+      "country_or_region": "巴基斯坦",
+      "url": "https://www.pakistancode.gov.pk/english/index.html"
+    }
+  ]
+}

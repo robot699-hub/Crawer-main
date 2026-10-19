@@ -1,0 +1,176 @@
+{
+  "schema_version": 4,
+  "job": {
+    "source_url": "https://documents.worldbank.org/en/projects-operations/projects-home https://ioe.ifad.org/en/latest-reports https://www.wfp.org/independent-evaluation",
+    "target_region": "全球项目；优先农业、农村发展、粮食安全、营养和韧性相关干预",
+    "material_or_data": "世界银行、IFAD、WFP 项目完成、成效与独立评估报告及其公开正文",
+    "first_batch_scope": "优先收录农业、农村发展、粮食安全、营养、气候韧性、小农、灌溉、渔业与生计项目的完成/成效/独立评估；记录地点、对象、干预、方法、结果与限制。下载公开 PDF；没有 PDF 的范围内评估页面保存 HTML 正文。",
+    "license_and_boundaries": "仅采集公开可访问的原始机构文件和页面，遵守 robots.txt、各机构网站条款和署名要求。记录仅作研究目录与证据定位，不等同于再分发、商业使用或对评估结论的官方解释。",
+    "latest_items": 3,
+    "content_fields": [
+      "项目/评估名称",
+      "机构",
+      "地点与对象",
+      "干预主题",
+      "评估类型与方法",
+      "结果与限制",
+      "发布日期/覆盖期",
+      "原始链接"
+    ]
+  },
+  "run": {
+    "output_dir": "D:\\爬取数据\\D18\\正式采集",
+    "output_format": "xlsx",
+    "include_fao": false,
+    "exclude_domains": [],
+    "max_candidates": 5,
+    "max_pages": 32,
+    "max_pages_per_site": 30,
+    "max_depth": 3,
+    "min_link_score": 1,
+    "delay": 1.2,
+    "timeout": 60,
+    "max_file_mb": 250,
+    "respect_robots": true,
+    "verify_dns": true,
+    "user_agent": "OfficialSourceCrawler/1.0 (D18 project evaluation evidence collection)"
+  },
+  "candidate_defaults": {
+    "source_id": "D18",
+    "enabled": true,
+    "priority": "P1",
+    "usage_license": "公开访问；逐文件/逐页许可、署名与再利用条件需以发布机构页面为准",
+    "crawl": {
+      "scope_ready": true,
+      "max_items": 1000,
+      "max_pages": 300,
+      "max_depth": 3,
+      "min_link_score": 1,
+      "include_terms": [
+        "evaluation",
+        "project performance",
+        "project completion",
+        "implementation completion",
+        "impact",
+        "agriculture",
+        "agricultural",
+        "rural",
+        "food security",
+        "food systems",
+        "smallholder",
+        "livelihood",
+        "nutrition",
+        "irrigation",
+        "fisheries",
+        "resilience"
+      ],
+      "exclude_terms": [],
+      "region_terms": [],
+      "year_start": null,
+      "year_end": null,
+      "dataset_detail_url_patterns": [
+        "/projects/",
+        "/project/",
+        "/evaluation/",
+        "/evaluations/",
+        "/reports/"
+      ],
+      "allowed_domains": [],
+      "file_types": [
+        "pdf",
+        "doc",
+        "docx",
+        "txt"
+      ],
+      "download": true,
+      "save_html": true
+    }
+  },
+  "candidates": [
+    {
+      "id": "D18-WB",
+      "source_id": "D18-WB",
+      "publisher": "World Bank",
+      "name": "世界银行项目与运营：农业和农村发展相关项目评估与完成材料",
+      "country_or_region": "全球；按项目所在国/地区记录",
+      "url": "https://documents.worldbank.org/en/projects-operations/projects-home",
+      "crawl": {
+        "max_pages": 1,
+        "max_depth": 0,
+        "allowed_domains": [
+          "projects.worldbank.org",
+          "documents.worldbank.org",
+          "documents1.worldbank.org",
+          "worldbank.org"
+        ]
+      }
+    },
+    {
+      "id": "D18-IFAD",
+      "source_id": "D18-IFAD",
+      "publisher": "Independent Office of Evaluation of IFAD (IOE)",
+      "name": "IFAD 独立评价：农村和农业项目成效、项目绩效与国别项目评价",
+      "country_or_region": "全球；按项目所在国/地区记录",
+      "url": "https://ioe.ifad.org/en/latest-reports",
+      "crawl": {
+        "allowed_domains": [
+          "ioe.ifad.org",
+          "ifad.org",
+          "www.ifad.org",
+          "webapps.ifad.org"
+        ]
+      }
+    },
+    {
+      "id": "D18-WFP",
+      "source_id": "D18-WFP",
+      "publisher": "World Food Programme Office of Evaluation",
+      "name": "WFP 独立评价：粮食安全、营养、韧性和生计相关项目与政策评价",
+      "country_or_region": "全球；按项目所在国/地区记录",
+      "url": "https://www.wfp.org/independent-evaluation",
+      "crawl": {
+        "max_pages": 30,
+        "max_depth": 2,
+        "allowed_domains": [
+          "wfp.org",
+          "www.wfp.org",
+          "docs.wfp.org",
+          "cdn.wfp.org",
+          "publications.wfp.org"
+        ]
+      }
+    },
+    {
+      "id": "D18-WFP-EVAL-POLICY",
+      "source_id": "D18-WFP",
+      "publisher": "World Food Programme Office of Evaluation",
+      "name": "WFP Evaluation Policy 2022：评估独立性、问责和学习机制",
+      "country_or_region": "全球",
+      "url": "https://www.wfp.org/publications/wfp-evaluation-policy-2022",
+      "crawl": {
+        "max_pages": 1,
+        "max_depth": 0,
+        "allowed_domains": [
+          "wfp.org",
+          "www.wfp.org"
+        ]
+      }
+    },
+    {
+      "id": "D18-WFP-EVAL-STRATEGY",
+      "source_id": "D18-WFP",
+      "publisher": "World Food Programme Office of Evaluation",
+      "name": "WFP Evaluation Strategy 2022：评价工作流与实施框架",
+      "country_or_region": "全球",
+      "url": "https://www.wfp.org/publications/wfp-evaluation-strategy-2022",
+      "crawl": {
+        "max_pages": 1,
+        "max_depth": 0,
+        "allowed_domains": [
+          "wfp.org",
+          "www.wfp.org"
+        ]
+      }
+    }
+  ]
+}
