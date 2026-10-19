@@ -47,6 +47,22 @@ python main.py --dry-run
 python main.py
 ```
 
+## 批量将 HTML 转成 PDF
+
+`scripts/batch_html_to_pdf.py` 会递归扫描输入目录中的 `.html` 和 `.htm` 文件，清理页面导航和脚本等非正文内容，再调用 Microsoft Edge 生成 PDF。PDF 会保留输入目录中的相对文件夹结构；转换结果和失败原因会写入 JSON 报告。
+
+```bash
+python scripts/batch_html_to_pdf.py "path/to/html" "path/to/pdf"
+```
+
+可以用 `--workers` 设置并行数量、`--limit` 限制转换数量、`--match` 按文件名筛选、`--base-url` 设置相对链接和图片的基础网址，也可以用 `--edge` 指定 `msedge.exe` 路径。例如：
+
+```bash
+python scripts/batch_html_to_pdf.py "data/html" "data/pdf" --workers 4 --match report --base-url "https://example.org/"
+```
+
+脚本需要本机安装 Microsoft Edge；首次安装项目依赖时会从 `requirements.txt` 安装 HTML 解析库 `lxml`。
+
 在 IDE 中直接运行项目根目录的 `main.py` 也会读取 `config/site_config.json`。`--dry-run` 只查看入口和范围配置状态，不发起网络请求：
 
 ```bash
